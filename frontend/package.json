@@ -1,0 +1,28 @@
+{
+  "name": "maga",
+  "version": "1.0.0",
+  "description": "Diplom",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "node /app/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SahorSs/Maga.git"
+  },
+  "keywords": [
+    "Hello"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SahorSs/Maga/issues"
+  },
+  "homepage": "https://github.com/SahorSs/Maga#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "webpack": "^4.29.5"
+  }
+}
