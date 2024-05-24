@@ -1,16 +1,11 @@
 // frontend/index.js
 
-// Теперь, когда мы настроили сборку,
-// можно по-человечески импортировать.
-import express from 'express'
-import template from './src/template'
+const express = require("express");
 
-let app = express();
-
-app.use('/dist', express.static('../dist'));
-
-app.get("*", (req, res) => {
-    res.send(template("Habr demo app"));
-});
+app = express();
 
 app.listen(process.env.APP_FRONTEND_PORT);
+
+app.get("*", (req, res) => {
+    res.send("Hello, world!")
+});
