@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     // Выполнение Ansible playbook
-                    sh 'make deploy-to-puppet'
+                    sh 'echo deploy-to-puppet'
                 }
             }
         }
