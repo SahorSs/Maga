@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     // Выполнение Ansible playbook
-                    sh 'make ansible-playbook'
+                    sh 'make deploy-to-puppet'
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script {
                     // Выполнение команды деплоя сервиса
-                    sh 'make service-deploy'
+                    sh 'echo service-deploy'
                 }
             }
         }
